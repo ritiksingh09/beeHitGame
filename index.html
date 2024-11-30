@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="website.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <ul>
+                <li>Highest Score : <span id="highScore"></span></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li>Time Left: <span id="timeLeft"></span></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li>Hit: <span id="hits"></span></li>
+            </ul>
+        </div>
+        <div class="beeContainer">
+
+            <img src="bee.png" alt="" class="bee">
+
+            <img src="blood.png" alt="" id="blood">
+
+            <div class="game" id="game-start">
+                <h2>GAME START</h2>
+                <button id="btnStart">Start</button>
+            </div>
+
+
+            <div class="game" id="game-over">
+                <h2>GAME OVER</h2>
+                <button id="btnRestart">Restart</button>
+            </div>
+            
+        </div>
+        <div class="gun-cursor">
+            <img src="gun-target.png" alt="" id="cursor">
+
+        </div>
+       
+    </div>
+</body>
+<script src="website.js"></script>
+</html>

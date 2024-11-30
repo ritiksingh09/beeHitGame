@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+    user-select: none;
+}
+
+  
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3)),url(forest-7459553_960_720.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 15px;
+    position: relative;
+    overflow: hidden;
+   
+}
+
+.header ul{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    
+}
+#cursor{
+    height: 70x;
+    width: 80px;
+    position: absolute;
+   z-index: 10;
+    transform: translate(-50%,-50%);
+   pointer-events: none;
+
+  
+}
+.beeContainer{
+    height: 90%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+}
+.bee{
+    height: 90px;
+    width: 70px;
+    position: absolute;
+   display: none;
+}
+.game{
+    width: 30%;
+    height: 30%;
+    background-color: rgba(255,255,255,0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    font-size: 25px;
+
+}
+
+ button{
+    width: 140px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 22px;
+    transition: all 1.1s ease-in-out;
+    cursor: pointer;
+
+}
+
+ button:hover{
+    background-color: red;
+    color: black;
+    transform: scaleX(1.1);
+
+}
+#game-start{
+    
+}
+#game-over{
+
+    display: none;
+    
+}
+#blood{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    z-index: 3;
+    display: none;
+}
+
+@media(max-width:824px){
+    .game h2{
+        padding-left: 60px;
+    }
+}
+
+@media(max-width:650px){
+    .game h2{
+        padding-right: 60px;
+    }
+    button{
+        width: 100px;
+    }
+}
+@media(max-width:410px){
+    .game{
+        width: 40%;
+        height: 30%;
+        background-color: rgba(255,255,255,0.6);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 20px;
+        font-size: 25px;
+    
+    }
+}
